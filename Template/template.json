@@ -2041,11 +2041,11 @@
       "Downloaders"
     ],
     "platform": "linux",
-	"ports": [
-	  "1443:1443/tcp",
-	  "6144:6144/tcp",
-	  "8080:8080/udp"
-	],	
+    "ports": [
+        "8112:8112/tcp",
+        "6881:6881/tcp",
+        "6881:6881/udp"
+    ],
     "restart_policy": "unless-stopped",
     "volumes": [
       {
