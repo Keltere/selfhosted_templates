@@ -405,6 +405,10 @@
     - Downloaders]
   platform: linux
   restart_policy: unless-stopped
+  ports:
+    - WebUI: "8112:8112/tcp"
+    - Inboundtcp: "6881:6881/tcp"
+    - Inboundudp: "6881:6881/udp"
   volumes:
     - container: /config
       bind: "!config/Deluge"
